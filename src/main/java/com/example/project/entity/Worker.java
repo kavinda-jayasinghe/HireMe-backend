@@ -24,6 +24,11 @@ public class Worker {
     @Column(name="last_name")
     private String last_name;
 
+    @Column(name="photo")
+    private String photo;
+
+    @Column(name="hourly_charge;")
+    private String hourly_charge;
     @Column(name="email")
     private String email;
 
@@ -48,6 +53,20 @@ public class Worker {
     @Column(name="description")
     private String description;
 
-    public Worker(String first_name, String last_name, String email, String city, String contact, String category, String password, String certifications, String address,  String description) {
+
+
+    public Worker(String first_name, String last_name, String photo, String email, String city, String contact, String category, String password, String certifications, String address, String description) {
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.photo = photo;
+        this.email = email;
+        this.city = city;
+        this.contact = contact;
+        this.category = category;
+        this.password = password;
+        this.certifications = certifications;
+        this.address = address;
+        this.description = description;
     }
+
 }

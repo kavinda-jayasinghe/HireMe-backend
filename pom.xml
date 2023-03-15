@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.6.10</version>
+		<version>2.5.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
@@ -16,7 +16,6 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<org.mapstruct.version>1.4.1.Final</org.mapstruct.version>
-
 	</properties>
 
 	<dependencies>
@@ -45,11 +44,6 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>com.vladmihalcea</groupId>
-			<artifactId>hibernate-types-5</artifactId>
-			<version>2.16.2</version>
-		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
 		<dependency>
 			<groupId>io.springfox</groupId>
@@ -63,6 +57,15 @@
 			<version>2.9.2</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.modelmapper/modelmapper -->
+		<!-- https://mvnrepository.com/artifact/org.modelmapper/modelmapper -->
+		<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+
+
 		<dependency>
 			<groupId>org.mapstruct</groupId>
 			<artifactId>mapstruct</artifactId>
@@ -75,6 +78,7 @@
 			<version>${org.mapstruct.version}</version>
 			<scope>provided</scope>
 		</dependency>
+
 
 
 	</dependencies>

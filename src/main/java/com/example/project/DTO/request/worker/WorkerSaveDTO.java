@@ -7,10 +7,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class WorkerDTO {
-    private int workerId;
+public class WorkerSaveDTO {
+
     private String first_name;
     private String last_name;
+    private String photo;
     private double hourlyCharge;
     private String email;
     private String city;

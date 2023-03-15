@@ -16,9 +16,11 @@ public class CustomerController {
     private  CustomerService customerService;
 
     @PostMapping(path="/register")
-    public String register(@RequestBody CustomerDTO customerDTO){
-        String name= customerService.registerCustomer(customerDTO);
+    public String register(@RequestBody CustomerSaveRequestDTO customerSaveRequestDTO){
+        String name= customerService.registerCustomer(customerSaveRequestDTO);
         return name;
 
     }
+
+
 }

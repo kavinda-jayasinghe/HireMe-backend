@@ -1,17 +1,18 @@
-package com.example.project.DTO.request.customer;
+package com.example.project.DTO.response.worker;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
+public class WorkerProfileDTO {
 
-public class CustomerSaveRequestDTO {
     private String first_name;
     private String last_name;
-    private String email;
-    private String password;
+    private String photo;
     private String city;
+    private String description;
+    private String contact;
 }
