@@ -12,4 +12,6 @@ public interface WorkerService {
     List<WorkerProfileDTO> getByCategory(String category) throws NotFoundException;
 
     List<WorkerProfileDTO> getByCity(String city) throws NotFoundException;
+
+    List<WorkerProfileDTO> getAllWorkers();
 }

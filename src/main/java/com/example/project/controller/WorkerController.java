@@ -19,6 +19,13 @@ public class WorkerController {
     @Autowired
 private WorkerService workerService;
 
+    @GetMapping(path="/getAllWorkers")
+    public List<WorkerProfileDTO> getAllWorkers(){
+        List<WorkerProfileDTO> customerDTOList=workerService.getAllWorkers();
+        return customerDTOList;
+    }
+
+
     @PostMapping(path="/register")
     public String register(@RequestBody WorkerSaveDTO workerSaveDTO){
         String name= workerService.registerWorker(workerSaveDTO);

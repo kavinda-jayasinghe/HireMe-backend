@@ -27,8 +27,6 @@ public class Worker {
     @Column(name="photo")
     private String photo;
 
-    @Column(name="hourly_charge;")
-    private String hourly_charge;
     @Column(name="email")
     private String email;
 

@@ -15,4 +15,5 @@ public class WorkerProfileDTO {
     private String city;
     private String description;
     private String contact;
+    private String category;
 }
